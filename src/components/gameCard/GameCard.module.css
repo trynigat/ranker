@@ -1,0 +1,31 @@
+.gameCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #11111a;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 15px 15px;
+    gap: 20px;
+}
+
+.gamePosition{
+    display: flex;
+    width: 50px;
+    height: 50px;
+border-radius: 10px;
+   justify-content: center;
+    align-items: center;
+   border: 1px solid aliceblue;
+}
+
+.gameTitle{
+    color: aliceblue;
+}
+
+.gameImage{
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}

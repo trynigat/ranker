@@ -1,0 +1,56 @@
+/* PWA SYSTEM CORE - ULTRA RESTRICTIVE */
+:root {
+    --safe-top: env(safe-area-inset-top);
+    --safe-bottom: env(safe-area-inset-bottom);
+}
+
+* {
+
+    -webkit-touch-callout: none !important;
+    /* Całkowita blokada zaznaczania tekstu */
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    /* Wyłączenie niebieskiego podświetlenia przy kliknięciu */
+    -webkit-tap-highlight-color: transparent !important;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed; /* Zapobiega "pływaniu" tła */
+    background-color: #000;
+    overscroll-behavior: none;
+    touch-action: none; /* Blokuje natywne gesty przeglądarki */
+    font-family: -apple-system, system-ui, sans-serif;
+}
+
+#root {
+    padding: var(--safe-top) env(safe-area-inset-right) var(--safe-bottom) env(safe-area-inset-left);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    -webkit-user-drag: none !important;
+    pointer-events: none !important;
+}
+
+/* Przywrócenie interakcji WYŁĄCZNIE dla formularzy */
+input, textarea {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+    -webkit-touch-callout: default !important;
+    touch-action: manipulation !important;
+    font-size: 16px !important; /* Blokada auto-zoomu */
+}
+
+button, a, .clickable {
+    touch-action: manipulation !important;
+}
+
