@@ -1,1 +1,6 @@
-# GameRanks
+# Ranker
+
+
+   ```bash
+   npm install
+   npm run dev -- --host   
