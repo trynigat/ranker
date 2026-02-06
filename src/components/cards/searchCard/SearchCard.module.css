@@ -1,0 +1,14 @@
+.searchCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+background-color: var(--bg-card);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img{
+    height: 100px;
+}
