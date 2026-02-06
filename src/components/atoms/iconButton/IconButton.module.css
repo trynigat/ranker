@@ -1,0 +1,10 @@
+.searchButton{
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+
+.searchIcon {
+    font-size: 30px;
+    color: aliceblue;
+}
