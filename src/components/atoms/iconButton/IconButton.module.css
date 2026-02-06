@@ -1,10 +1,10 @@
-.searchButton{
+.button{
     margin-left: auto;
     border: none;
     background-color: transparent;
 }
 
-.searchIcon {
+.icon {
     font-size: 30px;
     color: aliceblue;
 }

@@ -1,0 +1,18 @@
+.button{
+   width: auto;
+
+    background-color: var(--accent);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.button:hover{
+
+}
+
+.text{
+    color: white;
+font-size: 20px;
+
+}

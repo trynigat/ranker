@@ -1,6 +1,5 @@
 import style from './Input.module.css'
-import {useState} from "react";
-import searchIGDB from '../../../services/service.js'
+
 
 const Input = () => {
 
