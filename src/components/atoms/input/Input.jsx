@@ -1,13 +1,19 @@
 import style from './Input.module.css'
 
 
-const Input = () => {
+const Input = ({placeholder, onChange}) => {
 
 
 
     return (
         <>
-            <input className={style.input}  />
+            <form>
+
+                <input className={style.input} placeholder={placeholder} onChange={onChange}  />
+
+            </form>
+
+
         </>
 
         )
