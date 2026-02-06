@@ -1,11 +1,14 @@
 import {useState} from 'react';
 import {DndContext, useSensor, useSensors, PointerSensor, TouchSensor, closestCenter} from '@dnd-kit/core';
 import {arrayMove, SortableContext, verticalListSortingStrategy} from '@dnd-kit/sortable';
-import SortableItem from "./components/gameCard/SortableItem.jsx";
+import SortableItem from "./components/cards/gameCard/SortableItem.jsx";
+import Input from "./components/atoms/input/Input.jsx";
+import TextButton from "./components/atoms/textButton/TextButton.jsx";
 
 
 
 function App() {
+
     const [games, setGames] = useState([
         {id: '1', title: 'Cyberpunk 2077', img: 'https://images.igdb.com/igdb/image/upload/t_cover_big/coaih8.webp'},
         {
@@ -61,6 +64,11 @@ function App() {
                             {games.map((game, index) => (
                                 <SortableItem key={game.id} {...game} index={index}/>
                             ))}
+
+
+<Input></Input>
+                            <TextButton text={"Add"}></TextButton>
+
                         </div>
                     </SortableContext>
                 </DndContext>
