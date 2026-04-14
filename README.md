@@ -1,5 +1,6 @@
 # Ranker
 
+Simple PWA application (work in progress) 
 
    ```bash
    npm install
